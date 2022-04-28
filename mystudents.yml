@@ -1,0 +1,27 @@
+---
+- mystudents: 
+  - name: sri
+    pno: 123456789
+    address: 123 tnagar
+    street: vkl
+    pincode: 12345 
+   
+  
+  - name: srinu
+    pno: 456789
+    address: bnmk
+    Door:
+    street: fty
+    pincode: 34456
+
+  - name: sree
+    pno: 09877
+    address: bnjk
+    street: uio
+    pincode: 899765 
+
+  - name: drt
+    pno: 0987765
+    address: gtyu
+    street: hjk
+    pincode: 56789
