@@ -2,17 +2,14 @@
 hosts: all 
 become: yes 
 tasks: 
-- name: I want to install git
-  apt: 
-   name: git 
-   state: present 
+
 
 - name: I want to install apache2
   apt:
    name: apache2 
    state: present 
 
-- name: i want to start apache2 
+- name: I want to start apache2 
   apt: 
    name: apache2 
    state: restarted        
