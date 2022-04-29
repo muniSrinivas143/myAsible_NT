@@ -1,15 +1,13 @@
 --- 
-hosts: all 
-become: yes 
-tasks: 
+- hosts: all
+  become: yes
+  tasks:
+  - name: I want install apache2
+    apt:
+     name: apache2
+     state: present 
 
-
-- name: I want to install apache2
-  apt:
-   name: apache2 
-   state: present 
-
-- name: I want to start apache2 
-  apt: 
-   name: apache2 
-   state: restarted        
+  - name: I want to start apache2
+    apt: 
+     name: apache2
+     state: restarted   
