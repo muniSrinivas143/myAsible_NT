@@ -4,3 +4,7 @@
   tasks:
   - name: I want execute direct linux command
     command: hostname -f
+    register: myresult
+  - name: I want to display first  result 
+    deburg:
+      msg: "{{myresult}}"
