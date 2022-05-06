@@ -8,3 +8,14 @@
   - name: I want to display first  result 
     debug:
       msg: "{{myresult}}"
+
+  - name: I want install git 
+    apt:
+      name: git 
+      state: present
+    when: myresult.stderr ==""
+  - name: I want install tree 
+    apt: 
+      name: tree
+      state: present        
+    when: myresult.stderr!=""  
