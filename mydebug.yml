@@ -6,5 +6,5 @@
     command: hostname -f
     register: myresult
   - name: I want to display first  result 
-    deburg:
+    debug:
       msg: "{{myresult}}"
