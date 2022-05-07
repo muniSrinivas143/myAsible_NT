@@ -2,20 +2,21 @@
 - hosts: 172.31.30.101 
   become: yes
   tasks:
-   - name: I want install git 
-     apt:
+  - name: I want install git
+    apt:
       name: git
-      state: present
-      tags: mygit
+      state: present 
+    tags: mygit
 
-   - name: install tree 
-     apt:
+  - name: I want install tree 
+    apt:
       name: tree 
       state: present 
-      tags: mytree
+    tags: mytree
 
-   - name: wget
-     apt: 
-       name: wget 
-       state: present      
-       tags: mywget
+  - name: i  want  install wget
+    apt:
+      name: wget
+      state: present 
+      tags: mywget         
+     
