@@ -5,7 +5,7 @@
   - name: install git 
     apt: 
       name: git 
-      state: preset 
+      state: present 
 
   - name: install tree 
     apt:
