@@ -1,3 +1,5 @@
----
-- key: values
-#space notations
+--- 
+  - name: i want to create a file
+    file: 
+      path: /home/ubuntu/mytestfile
+      state: touch 
