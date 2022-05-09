@@ -12,11 +12,13 @@
     copy:
         src: mystaticfile.html
         dest: /var/www/html/index.html
+    notify:  restartwebserver  
 
   - name: I want to copy dynamic file into ansible nodes side 
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify:  restartwebserver  
 
   - name: I want to download files from remote(internet) into nodes side 
     get_url:
