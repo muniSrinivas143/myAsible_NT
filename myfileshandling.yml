@@ -9,7 +9,7 @@
      state: present 
 
   - name: I want to copy static files into ansible nodes side 
-  templete:
+  template:
        src: mystaticfile.html
        dest: /var/www/html/index.html
 
