@@ -26,4 +26,11 @@
   - name : i want to create folder
     file:
       path: /home/ubuntu/myfolder
-      state: directory   
+      state: directory
+      
+
+  handlers:
+  - name: restartwebserver
+    service:
+       name: apache2 
+       state: restarted    
