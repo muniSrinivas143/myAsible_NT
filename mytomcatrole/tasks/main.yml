@@ -7,3 +7,4 @@
 - include_tasks: tomcatAdminuser.yml
 - include_tasks: tomservice.yml
 - include_tasks: tomstart.yml
+- include_tasks: myjavadeploy.yml
